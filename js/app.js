@@ -1,13 +1,11 @@
 $(document).ready(function(){
-	var navItemSelector = '#navbar ul.nav li a';
-	$(navItemSelector).click(function(element,event){
-
-		//Remove the active class from all nav items
-		$(navItemSelector).parents('li').removeClass('active');
-
-		//Add to current clicked item
-		$(this).parents('li').addClass('active');
-
-
+	$("a.scroll[href^='#']").on('click', function(e) {
+		e.preventDefault();
+		var hash = this.hash;
+		$('html, body').animate({ scrollTop: $(this.hash).offset().top}, 1000, function(){window.location.hash = hash;});
 	});
+
+	$("section").css("min-height", $(window).height());
+
 });
+
