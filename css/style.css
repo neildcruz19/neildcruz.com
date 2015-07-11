@@ -10,3 +10,14 @@ body {
 .page-section {
 	padding-top: 50px;
 }
+
+.navbar-brand b {
+	color: #ffffff;
+	font-family: 'Pacifico', cursive;
+	font-weight: 400;
+}
+
+#profile {
+    background-image: url('../img/profile.jpg');
+    background-size: cover;
+}
