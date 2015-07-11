@@ -19,5 +19,6 @@ body {
 
 #profile {
     background-image: url('../img/profile.jpg');
-    background-size: cover;
+    background-repeat: no-repeat;
+	background-size: 100% auto;
 }
